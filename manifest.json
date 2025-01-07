@@ -9,7 +9,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.ctss.cn/*"],
+      "matches": ["<all_urls>"], // Add your website here, e.g. *://*.yourdomain.com/*
       "css": ["styles.css"],
       "js": [
         "pinyinjs-master/dict/pinyin_dict_withtone.js",
