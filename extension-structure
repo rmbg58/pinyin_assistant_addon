@@ -1,0 +1,6 @@
+pinyin-annotator/
+├── manifest.json
+├── content.js
+├── styles.css
+└── PINYINJS-MASTER/
+    └── (your PINYINJS files) 

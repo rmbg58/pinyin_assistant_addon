@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Pinyin Assistant",
+  "version": "1.0",
+  "description": "Add pinyin to selected Chinese text. Powered by pinyinjs (https://github.com/sxei/pinyinjs)",
+  "author": "rmb",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.ctss.cn/*"],
+      "css": ["styles.css"],
+      "js": [
+        "pinyinjs-master/dict/pinyin_dict_withtone.js",
+        "pinyinjs-master/dict/pinyin_dict_polyphone.js", 
+        "pinyinjs-master/pinyinUtil.js",
+        "content.js"
+      ]
+    }
+  ]
+} 
